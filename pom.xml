@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0</version>
     <modules>
-        <module>database</module>
+        <module>service</module>
         <module>dao</module>
         <module>web</module>
     </modules>
