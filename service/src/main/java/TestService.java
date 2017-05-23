@@ -1,4 +1,4 @@
-import Entities.TestDao;
+import entities.TestDao;
 
 /**
  * Created by User on 23.05.2017.

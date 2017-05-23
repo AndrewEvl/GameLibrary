@@ -1,9 +1,9 @@
-package Entities;
+package entities;
 
 /**
  * Created by User on 23.05.2017.
  */
-public class Genre {
+public class Publisher {
 
     private long id;
     private String name;
@@ -13,10 +13,10 @@ public class Genre {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Genre genre = (Genre) o;
+        Publisher publisher = (Publisher) o;
 
-        if (id != genre.id) return false;
-        return name != null ? name.equals(genre.name) : genre.name == null;
+        if (id != publisher.id) return false;
+        return name != null ? name.equals(publisher.name) : publisher.name == null;
     }
 
     @Override
@@ -24,14 +24,6 @@ public class Genre {
         int result = (int) (id ^ (id >>> 32));
         result = 31 * result + (name != null ? name.hashCode() : 0);
         return result;
-    }
-
-    @Override
-    public String toString() {
-        return "Genre{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
     }
 
     public long getId() {
