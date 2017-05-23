@@ -18,3 +18,6 @@ service/service.iml
 service/src/test/
 web/src/main/resources/
 web/web.iml
+dao/target/
+service/target/
+web/target/

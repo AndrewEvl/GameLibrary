@@ -1,7 +1,9 @@
 package connection;
 
+
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.apache.tomcat.jdbc.pool.PoolProperties;
+
 import java.sql.Connection;
 import java.sql.SQLException;
 
@@ -22,8 +24,11 @@ public class ConnectionManager {
         poolProperties.setPassword(PASSWORD);
         dataSource = new DataSource(poolProperties);
     }
-    private ConnectionManager(){}
+
+    private ConnectionManager() {
+    }
 
     public static Connection getConnection() throws SQLException {
         return dataSource.getConnection();
+    }
 }
