@@ -1,16 +1,5 @@
 
-.idea/artifacts/
-.idea/compiler.xml
-.idea/dataSources.local.xml
-.idea/dataSources/
-.idea/encodings.xml
-.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml
-.idea/libraries/Maven__junit_junit_4_12.xml
-.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml
-.idea/misc.xml
-.idea/modules.xml
-.idea/vcs.xml
-.idea/workspace.xml
+
 GameLibrary.iml
 dao/dao.iml
 dao/src/test/
@@ -18,7 +7,9 @@ service/service.iml
 service/src/test/
 web/src/main/resources/
 web/web.iml
+.idea/
 dao/target/
 service/target/
 web/target/
 target/
+web/src/main/webapp/WEB-INF/jsp/test.html
