@@ -2,14 +2,13 @@
 
 GameLibrary.iml
 dao/dao.iml
-dao/src/test/
 service/service.iml
 service/src/test/
 web/src/main/resources/
 web/web.iml
-.idea/
+.idea/*
+.idea/libraries/*
 dao/target/
 service/target/
 web/target/
 target/
-web/src/main/webapp/WEB-INF/jsp/test.html

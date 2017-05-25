@@ -13,7 +13,7 @@ public class Game {
     private Genre genre;
     private Publisher publisher;
     private Developer developer;
-    private Set<Reviews> reviews = new HashSet<Reviews>();
+    private Set<Review> reviews = new HashSet<Review>();
 
     @Override
     public boolean equals(Object o) {
@@ -93,11 +93,11 @@ public class Game {
         this.developer = developer;
     }
 
-    public Set<Reviews> getReviews() {
+    public Set<Review> getReviews() {
         return reviews;
     }
 
-    public void setReviews(Set<Reviews> reviews) {
+    public void setReviews(Set<Review> reviews) {
         this.reviews = reviews;
     }
 }

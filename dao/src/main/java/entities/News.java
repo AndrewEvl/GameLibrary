@@ -12,7 +12,7 @@ public class News {
 //    private LocalDate date;
     private String text;
     private long id;
-    private Set<Reviews> reviews = new HashSet<Reviews>();
+    private Set<Review> reviews = new HashSet<Review>();
 
 
     @Override
@@ -71,11 +71,11 @@ public class News {
         this.id = id;
     }
 
-    public Set<Reviews> getReviews() {
+    public Set<Review> getReviews() {
         return reviews;
     }
 
-    public void setReviews(Set<Reviews> reviews) {
+    public void setReviews(Set<Review> reviews) {
         this.reviews = reviews;
     }
 }

@@ -3,7 +3,7 @@ package entities;
 /**
  * Created by User on 23.05.2017.
  */
-public class Reviews {
+public class Review {
 
     private long id;
     private String text;
@@ -13,10 +13,10 @@ public class Reviews {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Reviews reviews = (Reviews) o;
+        Review review = (Review) o;
 
-        if (id != reviews.id) return false;
-        return text != null ? text.equals(reviews.text) : reviews.text == null;
+        if (id != review.id) return false;
+        return text != null ? text.equals(review.text) : review.text == null;
     }
 
     @Override
