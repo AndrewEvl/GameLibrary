@@ -1,44 +1,25 @@
 package entities;
 
+import lombok.*;
+
+import javax.persistence.*;
+
 /**
  * Created by User on 23.05.2017.
  */
+@Entity
+@ToString
+@EqualsAndHashCode
+@NoArgsConstructor
+@Table(name = "reviews")
 public class Review {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Getter
+    @Setter
     private long id;
+    @Column (name = "review")
+    @Setter
+    @Getter
     private String text;
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Review review = (Review) o;
-
-        if (id != review.id) return false;
-        return text != null ? text.equals(review.text) : review.text == null;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = (int) (id ^ (id >>> 32));
-        result = 31 * result + (text != null ? text.hashCode() : 0);
-        return result;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
 }

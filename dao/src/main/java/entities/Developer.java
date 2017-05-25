@@ -1,44 +1,28 @@
 package entities;
 
+import lombok.*;
+
+import javax.persistence.*;
+
 /**
  * Created by User on 23.05.2017.
  */
+@Entity
+@ToString
+@EqualsAndHashCode
+@NoArgsConstructor
+@Table(name = "developers")
 public class Developer {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Getter
+    @Setter
     private long id;
+
+    @Column (name = "name")
+    @Setter
+    @Getter
     private String name;
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Developer developer = (Developer) o;
-
-        if (id != developer.id) return false;
-        return name != null ? name.equals(developer.name) : developer.name == null;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = (int) (id ^ (id >>> 32));
-        result = 31 * result + (name != null ? name.hashCode() : 0);
-        return result;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }
