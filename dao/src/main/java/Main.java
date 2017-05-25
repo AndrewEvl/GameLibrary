@@ -1,3 +1,4 @@
+import entities.Developer;
 import entities.Emploees;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -15,14 +16,14 @@ public class Main {
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
 
-        Emploees emploees = new Emploees();
-        emploees.setName("no getters and setters");
-        session.saveOrUpdate(emploees);
+        Developer developer = new Developer();
+        developer.setName("no getters and setters");
+        session.saveOrUpdate(developer);
 
-        Emploees find = session.find(Emploees.class, 1L);
+        Developer find = session.find(Developer.class, 1L);
         System.out.println(find);
 
-        List<Emploees> resulList = session.createQuery("from Emploees",Emploees.class).getResultList();
+        List<Developer> resulList = session.createQuery("from Developer",Developer.class).getResultList();
         resulList.forEach(System.out::println);
 
 //        session.delete("from emploees where emploees.id='1'");

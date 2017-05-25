@@ -3,12 +3,8 @@ package entities;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import org.joda.time.LocalDate;
 import org.junit.*;
-
-import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
 
 /**
  * Created by User on 24.05.2017.
