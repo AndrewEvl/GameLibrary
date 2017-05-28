@@ -14,7 +14,7 @@ public class WebTest extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
             RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher("/WEB-INF/jsp/testPage.jsp");
-            req.setAttribute("test", new TestService().hiFromService());
+            req.setAttribute("test", new TestService().developerSetviceTest());
             requestDispatcher.forward(req, resp);
     }
 }

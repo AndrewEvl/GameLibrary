@@ -1,13 +1,13 @@
-import entities.TestDao;
+import entities.Developer;
+import entities.DeveloperTest;
+
 
 /**
  * Created by User on 23.05.2017.
  */
 public class TestService {
 
-    public String hiFromService () {
-        TestDao testDao = new TestDao();
-        String text = "Hi, from service";
-        return testDao.hiFromDao() + " " + text;
+    public Developer developerSetviceTest () {
+        return new DeveloperTest().developerDaoTest();
     }
 }

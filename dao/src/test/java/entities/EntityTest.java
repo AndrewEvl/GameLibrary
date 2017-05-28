@@ -6,6 +6,7 @@ import org.hibernate.cfg.Configuration;
 import org.junit.*;
 import static org.junit.Assert.assertEquals;
 
+
 /**
  * Created by User on 24.05.2017.
  */
